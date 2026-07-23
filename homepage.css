@@ -47,3 +47,21 @@ body {
     font-family: 'times new roman', serif;
     font-size: 78px;
 }
+
+.subtitle {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #ffffff;
+    font-family: 'times new roman', serif;
+    font-weight: 200;
+}
+
+.subtitle-content {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #ffffff;
+    font-family: 'times new roman', serif;
+    font-weight: 200;
+}
