@@ -1,0 +1,38 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+    background-color: #333;
+    padding: 20px 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;        
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 60px;
+    font-weight: bold;
+    font-size: 50px !important;              
+}
+
+
+.nav-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1px12px;
+    font-size: 22px;
+}
+
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
