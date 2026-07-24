@@ -78,7 +78,7 @@ body {
 }
 .title2 { 
   text-align: center; 
-  margin-top: 220px; 
+  margin-top: 8px; 
   font-family: 'times new roman', serif; 
   font-size: 78px; 
     color: #ffffff;
@@ -95,8 +95,8 @@ body {
   transform: none;
   display: block;
   text-align: center; 
-  margin-top: 20px; 
-  margin-bottom: 40px;
+  margin-top: 10px; 
+  margin-bottom: 24px;
   color: #ffffff; 
   font-family: 'times new roman', serif; 
   font-size: 35px; 
@@ -326,5 +326,18 @@ body {
     opacity: 1;
     transform: translateY(0);
     padding-top: 10px;
+}
+
+.video-wrap {
+    max-width: 900px;
+    margin: 10px auto 6px;
+    padding: 0 20px;
+}
+
+.video-wrap iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 12px;
 }
 
