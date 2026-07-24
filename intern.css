@@ -1,0 +1,69 @@
+body { 
+  margin: 0; 
+  font-family: Arial, sans-serif; 
+  background-color: #0a2042; 
+  background-image: url('sf-seal.PNG'); 
+  background-size: 75%; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+} 
+.navbar { 
+  background-color: #172b44; 
+  padding: 20px 40px; 
+} 
+.nav-links { 
+  display: flex; 
+  justify-content: center; 
+  list-style-type: none; 
+  flex-wrap: nowrap; 
+  margin: 0; 
+  padding: 0; 
+  gap: 60px; 
+  font-weight: 500; 
+  font-size: 22px; 
+} 
+.nav-links a { 
+  display: block; 
+  color: white; 
+  text-decoration: none; 
+  padding: 0px 12px; 
+  font-size: 18px; 
+} 
+.nav-links a:hover { 
+  background-color: #555; 
+  border-radius: 4px; 
+} 
+.title { 
+  text-align: center; 
+  margin-top: 50px; 
+  font-family: 'times new roman', serif; 
+  font-size: 78px; 
+    color: #ffffff;
+} 
+.subtitle { 
+  text-align: center; 
+  margin-top: 20px; 
+  color: #ffffff; 
+  font-family: 'times new roman', serif; 
+  font-size: 25px; 
+}
+
+.grid-container { 
+  display: grid; 
+  grid-template-columns: 1fr; 
+  gap: 400px; 
+  padding-top: 40px;
+  padding-left: 200px;
+  padding-right: 200px;
+  width: 100%;
+  box-sizing: border-box;
+} 
+
+.grid-text { 
+  background-color: #ccd0d3; 
+  color: #0a2042; 
+  padding: 200px; 
+  border-radius: 75px; 
+  text-align: center; 
+}
