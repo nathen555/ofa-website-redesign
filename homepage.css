@@ -138,23 +138,134 @@ body {
     z-index: 10;
 }
 
-.carousel-img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover; /* Prevents the poster graphic from distorting or stretching */
-    border-radius: 15px;
-    opacity: 0.4;
-    transition: all 0.5s ease;
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 60px auto;
+    display: flex;
     justify-content: center;
 }
 
-/* Scaled active item center dimension rules */
-#slide1:checked ~ .carousel-track .img1,
-#slide2:checked ~ .carousel-track .img2,
-#slide3:checked ~ .carousel-track .img3 {
-    opacity: 1;
-    width: 250px;
-    height: 250px;
+input[name="slider"] {
+    display: none;
 }
 
+.carousel-track {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
 
+.carousel-img {
+    position: absolute;
+    bottom: 20px;
+    width: 550px;
+    height: 750px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), 
+                opacity 0.6s ease, 
+                z-index 0.6s step-end;
+}
+
+#slide1:checked ~ .carousel-track .img1 { z-index: 5; opacity: 1; transform: translateX(0) scale(1); }
+#slide1:checked ~ .carousel-track .img2 { z-index: 1; opacity: 0.4; transform: translateX(180px) translateY(40px) scale(0.62); transition-property: transform, opacity; }
+#slide1:checked ~ .carousel-track .img3 { z-index: 1; opacity: 0.4; transform: translateX(-180px) translateY(40px) scale(0.62); transition-property: transform, opacity; }
+
+#slide2:checked ~ .carousel-track .img2 { z-index: 5; opacity: 1; transform: translateX(0) scale(1); }
+#slide2:checked ~ .carousel-track .img3 { z-index: 1; opacity: 0.4; transform: translateX(180px) translateY(40px) scale(0.62); transition-property: transform, opacity; }
+#slide2:checked ~ .carousel-track .img1 { z-index: 1; opacity: 0.4; transform: translateX(-180px) translateY(40px) scale(0.62); transition-property: transform, opacity; }
+
+#slide3:checked ~ .carousel-track .img3 { z-index: 5; opacity: 1; transform: translateX(0) scale(1); }
+#slide3:checked ~ .carousel-track .img1 { z-index: 1; opacity: 0.4; transform: translateX(180px) translateY(40px) scale(0.62); transition-property: transform, opacity; }
+#slide3:checked ~ .carousel-track .img2 { z-index: 1; opacity: 0.4; transform: translateX(-180px) translateY(40px) scale(0.62); transition-property: transform, opacity; }
+
+.arrow-controls {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    transform: translateY(-50%);
+    justify-content: space-between;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.arrow {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px 20px;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    pointer-events: auto;
+    user-select: none;
+}
+
+#slide1:checked ~ .ac1,
+#slide2:checked ~ .ac2,
+#slide3:checked ~ .ac3 {
+    display: flex;
+}
+
+.content3 {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 50px;
+    color: #ffffff;
+    font-family: 'times new roman', serif;
+}
+
+.bottom-navbar { 
+  position: relative; 
+  width: 100%; 
+  background-color: #ffffff; 
+  padding: 20px 0; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers everything on the page horizontally */
+  justify-content: center;
+  gap: 15px;
+}
+
+.content3 {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #333;
+}
+
+.footer-section { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 10px; 
+} 
+
+.connect-us { 
+  font-family: sans-serif; 
+  font-weight: bold; 
+  font-size: 18px; 
+  color: #333; 
+  text-decoration: none; 
+} 
+
+.social-icons { 
+  display: flex; 
+  justify-content: center; 
+  gap: 15px; 
+} 
+
+.nav-image { 
+  display: block; 
+  width: 40px; 
+  height: 40SSpx; 
+  object-fit: contain; 
+}
