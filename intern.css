@@ -11,6 +11,9 @@ body {
 .navbar { 
   background-color: #172b44; 
   padding: 20px 40px; 
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 } 
 .nav-links { 
   display: flex; 
@@ -52,18 +55,120 @@ body {
 .grid-container { 
   display: grid; 
   grid-template-columns: 1fr; 
-  gap: 400px; 
-  padding-top: 40px;
-  padding-left: 200px;
-  padding-right: 200px;
-  width: 100%;
-  box-sizing: border-box;
+  padding-top: 40px; 
+  padding-left: 200px; 
+  padding-right: 200px; 
+  width: 100%; 
+  box-sizing: border-box; 
 } 
 
 .grid-text { 
   background-color: #ccd0d3; 
   color: #0a2042; 
-  padding: 200px; 
+  padding: 150px 40px; 
   border-radius: 75px; 
   text-align: center; 
+  margin-bottom: 40px;
+  margin-top: 40px;
+} 
+
+.mid-box {
+  background-color: #172b44;
+  color: #ffffff;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 36px;
+  box-sizing: border-box;
+  width: 100%;            
+  max-width: 800px;       
+  padding: 60px 20px;     
+  margin-top: 20px;       
+  margin-bottom: 20px;    
+  margin-left: auto;      
+  margin-right: auto;     
+}
+
+.bottom-navbar { 
+  position: relative; 
+  
+  width: 100vw !important; 
+  left: 50%;
+  transform: translateX(-50%);
+  
+  background-color: #ffffff; 
+  padding: 0px 400px; 
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: space-between; 
+  box-sizing: border-box; 
+}
+
+
+.footer-section { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start;
+  gap: 10px; 
+} 
+
+.connect-us { 
+  font-family: sans-serif; 
+  font-weight: bold; 
+  font-size: 18px; 
+  color: #333; 
+  text-decoration: none; 
+} 
+
+.social-icons { 
+  display: flex; 
+  justify-content: flex-start; 
+  align-items: center; 
+  gap: 15px; 
+} 
+
+.nav-image { 
+  display: block; 
+  width: 44px; 
+  height: 44px; 
+  object-fit: contain; 
+}
+
+.misc-images .nav-image {
+  width: 100px; 
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.fb-icon { 
+  width: 75px !important; 
+  height: 75px !important; 
+}
+
+.center-gallery {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: auto;
+  margin: 0 auto;
+}
+
+.center-gallery .nav-image {
+  display: inline-block !important;
+  width: 250px !important;
+  height: 250px !important;
+  margin: 0 10px !important;
+}
+
+.white-divider {
+    display: block;
+    margin: -50px auto 0 auto;
+    filter: invert(1) brightness(3);
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    transform: scaleY(.2);
+    padding: 20px 0px;
 }
