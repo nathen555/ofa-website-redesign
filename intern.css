@@ -8,13 +8,38 @@ body {
   background-repeat: no-repeat; 
   background-attachment: fixed; 
 } 
+
+.page-animate {
+  opacity: 0;
+  animation: fadeUpIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeUpIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 .navbar { 
   background-color: #172b44; 
   padding: 20px 40px; 
   position: sticky;
   top: 0;
   z-index: 1000;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: navbarDropIn 0.8s ease-out 0.15s forwards;
 } 
+
+@keyframes navbarDropIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .nav-links { 
   display: flex; 
   justify-content: center; 
@@ -235,88 +260,66 @@ body {
     color:white;
 }
 
-
-.faq summary{
-    list-style:none;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:16px;
-    cursor:pointer;
-    user-select:none;
-    font-size:2rem;
-    font-weight:700;
-    padding:12px 0;
+.faq-toggle{
+    width: 100%;
+    background: none;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 12px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
 }
 
-.faq summary{
-    position:relative;
-    list-style:none;
-    cursor:pointer;
-    user-select:none;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    font-size:2rem;
-    font-weight:700;
-    padding:12px 0;
-}
-
-.faq .arrow{
+.arrow {
     position:absolute;
-    left:53%;
-    transform:translateX(-330px); 
+    left:50%;
+    transform:translateX(-330px) rotate(0deg);
     transition:transform .35s ease;
     font-size:1.3rem;
+    display:inline-block;
 }
 
-
-.faq[open] .arrow{
+.faq-toggle[aria-expanded="true"] .arrow,
+.faq-toggle.is-open .arrow {
     transform:translateX(-330px) rotate(90deg);
 }
 
-
-.faq summary:hover .arrow{
-    transform:rotate(15deg);
-}
-
-.faq summary:hover .arrow{
-    transform:translateX(-330px) rotate(15deg);
-}
-
-.faq .question{
+.faq-toggle .question{
     transform:translateX(-8px);
     transition:transform .3s ease;
 }
 
-.faq summary:hover .question{
+.faq-toggle:hover .question{
     transform:translateX(0);
 }
 
-
-.faq .answer{
-    max-height:0;
-    overflow:hidden;
-    opacity:0;
-    transform:translateY(-10px);
-    transition:
-        max-height .45s ease,
-        opacity .35s ease,
-        transform .35s ease;
-
-    text-align:center;
-    font-size:1.15rem;
-    line-height:1.6;
-    padding:0 40px;
+.faq .answer {
+    overflow: hidden;
 }
 
+.faq .answer-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: max-height .4s ease, opacity .3s ease, transform .35s ease;
+    text-align: center;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    padding: 0 40px;
+}
 
-.faq[open] .answer{
-    max-height:300px;
-    opacity:1;
-    transform:translateY(0);
-    padding-top:10px;
+.faq .faq-toggle[aria-expanded="true"] + .answer .answer-content {
+    max-height: 220px;
+    opacity: 1;
+    transform: translateY(0);
+    padding-top: 10px;
 }
 

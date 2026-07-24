@@ -9,7 +9,7 @@
 
 <body>
 
-
+<div class="page-animate">
     <nav class="navbar">
         <ul class="nav-links">
             <li><a href="index.html">About</a></li>
@@ -27,31 +27,32 @@
 <div class="subtitle">In addition to internship opportunities, OFA seeks to provide resources and information to support youth, <br> young adults, and communities in their workforce development and growth.</div> 
 <img src="./images/white-divider1.PNG" alt="uhh very cool divider" class="white-divider">
 
-<details class="faq">
-    <summary>
+<div class="faq">
+    <button class="faq-toggle" type="button" aria-expanded="false">
         <span class="arrow">▶</span>
-        <span class="question">
-            Am I required to have a resume?
-        </span>
-    </summary>
+        <span class="question">Am I required to have a resume?</span>
+    </button>
 
     <div class="answer">
-        A resume is a written account of your skills, experiences, and accomplishments. You will definitely need one!
-        A resume helps you stand out when applying for jobs, internships, programs, college, or scholarships. It doesn't need to be fancy—everyday experiences like babysitting, selling homemade goods, or flipping sneakers can show responsibility and entrepreneurial skills. Use a template, add your info, and name the file with your first and last name.
+        <div class="answer-content">
+            A resume is a written account of your skills, experiences, and accomplishments. You will definitely need one!
+            A resume helps you stand out when applying for jobs, internships, programs, college, or scholarships. It doesn't need to be fancy—everyday experiences like babysitting, selling homemade goods, or flipping sneakers can show responsibility and entrepreneurial skills. Use a template, add your info, and name the file with your first and last name.
+        </div>
     </div>
-</details>
+</div>
 
-<details class="faq">
-    <summary>
+<div class="faq">
+    <button class="faq-toggle" type="button" aria-expanded="false">
         <span class="arrow">▶</span>
-        <span class="question">
-            Why do I need a LinkedIn profile?
-        </span>
-    </summary>
+        <span class="question">Why do I need a LinkedIn profile?</span>
+    </button>
 
     <div class="answer">
-        A LinkedIn profile boosts your visibility with employers and recruiters, builds your professional credibility, expands your network, and gives access to job opportunities.</div>
-</details>
+        <div class="answer-content">
+            A LinkedIn profile boosts your visibility with employers and recruiters, builds your professional credibility, expands your network, and gives access to job opportunities.
+        </div>
+    </div>
+</div>
 
 <img src="./images/white-divider1.PNG" alt="uhh very cool divider" class="white-divider">
 
@@ -86,5 +87,14 @@
     <img src="./images/sf-seal.PNG" class="nav-image" alt="Icon 3">
   </div>
 </div>
+<script>
+  document.querySelectorAll('.faq-toggle').forEach(function(button) {
+    button.addEventListener('click', function() {
+      var isExpanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', String(!isExpanded));
+      this.classList.toggle('is-open', !isExpanded);
+    });
+  });
+</script>
 </body>
 </html>
