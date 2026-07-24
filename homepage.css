@@ -57,6 +57,14 @@ body {
     font-size: 78px;
 }
 
+.title2 {
+    text-align: center;
+    margin-top: -50px !important;
+    font-size: 36px;
+    color: #ffffff;
+    font-family: 'times new roman', serif;
+    font-size: 78px;
+}
 .subtitle { 
   text-align: center; 
   margin-top: 20px; 
