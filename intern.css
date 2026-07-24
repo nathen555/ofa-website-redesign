@@ -308,7 +308,7 @@ body {
     opacity: 0;
     transform: translateY(-8px);
     transition: max-height .4s ease, opacity .3s ease, transform .35s ease;
-    text-align: center;
+    text-align: left;
     font-size: 1.15rem;
     line-height: 1.6;
     padding: 0 40px;
