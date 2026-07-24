@@ -2,7 +2,7 @@ body {
   margin: 0; 
   font-family: Arial, sans-serif; 
   background-color: #0a2042; 
-  background-image: url('sf-seal.PNG'); 
+  background-image: url('images/sf-seal.PNG'); 
   background-size: 75%; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -75,7 +75,7 @@ body {
 .mid-box {
   background-color: #172b44;
   color: #ffffff;
-  border-radius: 12px;
+  border-radius: 50px;
   text-align: center;
   font-size: 36px;
   box-sizing: border-box;
@@ -86,6 +86,14 @@ body {
   margin-bottom: 20px;    
   margin-left: auto;      
   margin-right: auto;     
+}
+
+.content3 {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 50px;
+    color: #ffffff;
+    font-family: 'times new roman', serif;
 }
 
 .bottom-navbar { 
@@ -171,4 +179,38 @@ body {
     width:80%;
     transform: scaleY(.2);
     padding: 20px 0px;
+}
+
+.grid-clickable-text2 { 
+  background-color: #172b44; 
+  color: #ffffff; 
+  padding: 20px 40px; 
+  border-radius: 75px; 
+  text-align: center; 
+  margin-bottom: 40px; 
+  margin-top: 40px; 
+}
+
+.grid-link-wrapper {
+  display: block !important;
+  text-decoration: none !important;
+  width: 100% !important;
+  cursor: pointer;
+}
+
+.grid-clickable-text2 p {
+  color: #ffffff !important; 
+  font-size: 24px !important;
+  font-family: sans-serif !important;
+  margin: 0 !important;
+}
+
+.dropdown {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 50px;
+  color: #ffffff;
+  font-family: 'times new roman', serif;
+  justify-content: center;
+  text-decoration: underline;
 }

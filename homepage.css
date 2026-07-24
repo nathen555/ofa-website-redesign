@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #0a2042;
-    background-image: url('sf-seal.PNG'); 
+    background-image: url('images/sf-seal.PNG'); 
     background-size: 75%;                 
     background-position: center;            
     background-repeat: no-repeat;            
@@ -115,32 +115,58 @@ body {
     font-family: 'times new roman', serif;
 }
 
-.grid-text {
-    text-align: center;
-    font-size: 40px;
-    color: #000000;
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
-
-}
-
 .grid-container { 
-    display: grid; 
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 100px; 
-    padding: 20px;
-    z-index: 1;
+  display: grid !important; 
+  grid-template-columns: repeat(2, 1fr) !important; 
+  gap: 60px !important; 
+  padding: 40px 200px !important; 
+  width: 100% !important; 
+  box-sizing: border-box !important; 
+  z-index: 1;
+} 
+
+.grid-text { 
+  text-align: center; 
+  font-size: 40px; 
+  color: #000000; 
+  font-family: 'Inter', sans-serif; 
+  font-weight: bold;
+} 
+
+.grid-link-wrapper { 
+  text-decoration: none !important; 
+  display: block !important; 
+  width: 100% !important; 
+  max-width: 800px; 
+  margin: 20px auto; 
+} 
+
+.grid-clickable-text { 
+  background-color: #ffffff !important; 
+  color: #0a2042 !important; 
+  border-radius: 12px !important; 
+  text-align: center !important; 
+  font-size: 36px !important; 
+  box-sizing: border-box !important; 
+  padding: 60px 20px !important; 
+  transition: transform 0.2s ease, background-color 0.2s ease !important; 
+} 
+
+.grid-link-wrapper:hover .grid-clickable-text { 
+  background-color: #f0f4f8 !important; 
+  transform: scale(1.02) !important; 
+} 
+
+.grid-container > div { 
+  border: 15px solid #ffffff; 
+  padding: 15px; 
+  color: #020202; 
+  word-break: break-all; 
+  border-radius: 75px; 
+  background-color: white; 
+  z-index: 10; 
 }
 
-.grid-container > div {
-    border: 15px solid #ffffff; 
-    padding: 15px;
-    color: #020202;
-    word-break: break-all; 
-    border-radius: 75px;
-    background-color: white;
-    z-index: 10;
-}
 
 .slider-wrapper {
     position: relative;
