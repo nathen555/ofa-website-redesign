@@ -86,17 +86,75 @@ body {
     margin-left: auto;
     margin-right: auto;
     width:80%;
-    transform: scaleY(.5);
+    transform: scaleY(.2);
     padding: 20px 0px;
 }
+
 
 .content {
     text-align: center;
     margin-top: 50px;
-    font-size: 20px;
+    margin-bottom: 5px !important;
+    font-size: 25px;
     padding: 0;
     color: #ffffff;
     font-family: 'times new roman', serif;
+}
+
+.content2 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 50px !important;
+    font-size: 25px;
+    padding: 40px;;
+    color: #ffffff;
+    font-family: 'times new roman', serif;
+}
+
+.grid-text {
+    text-align: center;
+    font-size: 40px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+
+}
+
+.grid-container { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 100px; 
+    padding: 20px;
+    z-index: 1;
+}
+
+.grid-container > div {
+    border: 15px solid #ffffff; 
+    padding: 15px;
+    color: #020202;
+    word-break: break-all; 
+    border-radius: 75px;
+    background-color: white;
+    z-index: 10;
+}
+
+.carousel-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Prevents the poster graphic from distorting or stretching */
+    border-radius: 15px;
+    opacity: 0.4;
+    transition: all 0.5s ease;
+    justify-content: center;
+}
+
+/* Scaled active item center dimension rules */
+#slide1:checked ~ .carousel-track .img1,
+#slide2:checked ~ .carousel-track .img2,
+#slide3:checked ~ .carousel-track .img3 {
+    opacity: 1;
+    width: 250px;
+    height: 250px;
 }
 
 
