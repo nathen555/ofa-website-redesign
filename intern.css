@@ -12,6 +12,7 @@ body {
 .page-animate {
   opacity: 0;
   animation: fadeUpIn 0.8s ease-out forwards;
+  padding-top: 100px;
 }
 
 @keyframes fadeUpIn {
@@ -22,8 +23,10 @@ body {
 .navbar { 
   background-color: #172b44; 
   padding: 20px 40px; 
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   opacity: 0;
   transform: translateY(-20px);
@@ -43,6 +46,7 @@ body {
 .nav-links { 
   display: flex; 
   justify-content: center; 
+  align-items: center; 
   list-style-type: none; 
   flex-wrap: nowrap; 
   margin: 0; 
@@ -52,11 +56,14 @@ body {
   font-size: 22px; 
 } 
 .nav-links a { 
-  display: block; 
+  display: flex; 
+  align-items: center; 
   color: white; 
   text-decoration: none; 
-  padding: 0px 12px; 
+  padding: 0 12px; 
   font-size: 18px; 
+  line-height: 1.2;
+  min-height: 24px;
 } 
 .nav-links a:hover { 
   background-color: #555; 
