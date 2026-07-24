@@ -227,20 +227,25 @@ input[name="slider"] {
 
 .bottom-navbar { 
   position: relative; 
-  width: 100%; 
+  
+  width: 100vw !important; 
+  left: 50%;
+  transform: translateX(-50%);
+  
   background-color: #ffffff; 
-  padding: 20px 40px; /* Added side padding to keep elements off the very edge */
+  padding: 0px 400px; 
   display: flex;
-  flex-direction: row; /* Aligns the seal side-by-side with the text/icons */
+  flex-direction: row; 
   align-items: center; 
-  justify-content: space-between; /* Pushes content to opposite sides */
-  box-sizing: border-box;
+  justify-content: space-between; 
+  box-sizing: border-box; 
 }
+
 
 .footer-section { 
   display: flex; 
   flex-direction: column; 
-  align-items: flex-start; /* Aligns text and icons nicely to the left side */
+  align-items: flex-start;
   gap: 10px; 
 } 
 
@@ -269,9 +274,27 @@ input[name="slider"] {
 .misc-images .nav-image {
   width: 100px; 
   height: 100px;
+  display: flex;
+  align-items: center;
 }
 
 .fb-icon { 
   width: 75px !important; 
   height: 75px !important; 
+}
+
+.center-gallery {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: auto;
+  margin: 0 auto;
+}
+
+.center-gallery .nav-image {
+  display: inline-block !important;
+  width: 250px !important;
+  height: 250px !important;
+  margin: 0 10px !important;
 }
