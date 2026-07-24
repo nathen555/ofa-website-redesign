@@ -118,55 +118,43 @@ body {
 .grid-container { 
   display: grid !important; 
   grid-template-columns: repeat(2, 1fr) !important; 
-  gap: 60px !important; 
-  padding: 40px 200px !important; 
+  gap: 40px !important; 
+  padding: 40px 100px !important; /* Reduced side padding so buttons fit screens better */
   width: 100% !important; 
   box-sizing: border-box !important; 
-  z-index: 1;
-} 
-
-.grid-text { 
-  text-align: center; 
-  font-size: 40px; 
-  color: #000000; 
-  font-family: 'Inter', sans-serif; 
-  font-weight: bold;
 } 
 
 .grid-link-wrapper { 
   text-decoration: none !important; 
   display: block !important; 
   width: 100% !important; 
-  max-width: 800px; 
-  margin: 20px auto; 
 } 
 
 .grid-clickable-text { 
-  background-color: #ffffff !important; 
-  color: #0a2042 !important; 
+  background-color: #172b44 !important; /* Matches your navigation block color */
+  border: 1px solid #23395b !important; /* Subtle inner border outline */
   border-radius: 12px !important; 
   text-align: center !important; 
-  font-size: 36px !important; 
   box-sizing: border-box !important; 
-  padding: 60px 20px !important; 
-  transition: transform 0.2s ease, background-color 0.2s ease !important; 
+  padding: 30px 20px !important; /* Reduced height padding so they look like sleek banners */
+  transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.2s ease !important; 
 } 
 
-.grid-link-wrapper:hover .grid-clickable-text { 
-  background-color: #f0f4f8 !important; 
-  transform: scale(1.02) !important; 
-} 
-
-.grid-container > div { 
-  border: 15px solid #ffffff; 
-  padding: 15px; 
-  color: #020202; 
-  word-break: break-all; 
-  border-radius: 75px; 
-  background-color: white; 
-  z-index: 10; 
+/* Targets the actual text elements inside the grid boxes */
+.grid-clickable-text p {
+  color: #ffffff !important; /* Bright white text to stand out against navy */
+  font-family: Arial, sans-serif !important;
+  font-size: 24px !important; /* Balanced typography scale */
+  font-weight: 500 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
+.grid-link-wrapper:hover .grid-clickable-text { 
+  background-color: #1d3554 !important; /* Elevates brightness on hover state */
+  transform: translateY(-4px) scale(1.01) !important; /* Smooth upwards glide animation */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3) !important;
+} 
 
 .slider-wrapper {
     position: relative;
