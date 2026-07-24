@@ -39,7 +39,7 @@ body {
 } 
 .title { 
   text-align: center; 
-  margin-top: 50px; 
+  margin-top: 0px; 
   font-family: 'times new roman', serif; 
   font-size: 78px; 
     color: #ffffff;
@@ -205,12 +205,109 @@ body {
   margin: 0 !important;
 }
 
-.dropdown {
-  text-align: center;
-  margin-top: 5px;
-  font-size: 50px;
-  color: #ffffff;
-  font-family: 'times new roman', serif;
+
+.faq{
+    width:80%;
+    max-width:900px;
+    margin:20px auto;
+    margin-top: -30px;
+    margin-bottom: 25px;
+    color:white;
+}
+
+
+.faq summary{
+    list-style:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:16px;
+    cursor:pointer;
+    user-select:none;
+    font-size:2rem;
+    font-weight:700;
+    padding:12px 0;
+}
+
+.faq summary{
+    position:relative;
+    list-style:none;
+    cursor:pointer;
+    user-select:none;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:2rem;
+    font-weight:700;
+    padding:12px 0;
+}
+
+.faq .arrow{
+    position:absolute;
+    left:53%;
+    transform:translateX(-330px); 
+    transition:transform .35s ease;
+    font-size:1.3rem;
+}
+
+
+.faq[open] .arrow{
+    transform:translateX(-330px) rotate(90deg);
+}
+
+
+.faq summary:hover .arrow{
+    transform:rotate(15deg);
+}
+
+.faq summary:hover .arrow{
+    transform:translateX(-330px) rotate(15deg);
+}
+
+.faq .question{
+    transform:translateX(-8px);
+    transition:transform .3s ease;
+}
+
+.faq summary:hover .question{
+    transform:translateX(0);
+}
+
+
+.faq .answer{
+    max-height:0;
+    overflow:hidden;
+    opacity:0;
+    transform:translateY(-10px);
+    transition:
+        max-height .45s ease,
+        opacity .35s ease,
+        transform .35s ease;
+
+    text-align:center;
+    font-size:1.15rem;
+    line-height:1.6;
+    padding:0 40px;
+}
+
+
+.faq[open] .answer{
+    max-height:300px;
+    opacity:1;
+    transform:translateY(0);
+    padding-top:10px;
+}
+
+.subtitle2 {
+  transform: none;
+  display: block;
+  text-align: center; 
+  margin-top: 20px; 
+  color: #ffffff; 
+  font-family: 'times new roman', serif; 
+  font-size: 35px; 
   justify-content: center;
-  text-decoration: underline;
+  padding: 25px;
 }
