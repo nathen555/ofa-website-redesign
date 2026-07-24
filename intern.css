@@ -143,26 +143,24 @@ body {
 
 .bottom-navbar { 
   position: relative; 
-  
-  width: 100vw !important; 
-  left: 50%;
-  transform: translateX(-50%);
-  
+  width: 100%;
+  max-width: 100%;
   background-color: #ffffff; 
-  padding: 0px 400px; 
+  padding: 20px 5vw;
   display: flex;
-  flex-direction: row; 
+  flex-wrap: wrap;
   align-items: center; 
   justify-content: space-between; 
+  gap: 20px;
   box-sizing: border-box; 
 }
-
 
 .footer-section { 
   display: flex; 
   flex-direction: column; 
   align-items: flex-start;
   gap: 10px; 
+  min-width: 0;
 } 
 
 .connect-us { 
@@ -188,8 +186,8 @@ body {
 }
 
 .misc-images .nav-image {
-  width: 100px; 
-  height: 100px;
+  width: min(100px, 18vw);
+  height: min(100px, 18vw);
   display: flex;
   align-items: center;
 }
@@ -201,18 +199,18 @@ body {
 
 .center-gallery {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: auto;
+  gap: 10px;
   margin: 0 auto;
 }
 
 .center-gallery .nav-image {
   display: inline-block !important;
-  width: 250px !important;
-  height: 250px !important;
-  margin: 0 10px !important;
+  width: min(250px, 24vw) !important;
+  height: min(250px, 24vw) !important;
+  margin: 0 !important;
 }
 
 .white-divider {
