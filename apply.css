@@ -160,3 +160,61 @@ body {
   height: min(250px, 24vw) !important;
   margin: 0 !important;
 }
+
+.title { 
+  text-align: center; 
+  margin-top: 50px; 
+  font-family: 'times new roman', serif; 
+  font-size: 78px; 
+    color: #ffffff;
+}
+.title2 { 
+  text-align: center; 
+  margin-top: 8px; 
+  font-family: 'times new roman', serif; 
+  font-size: 78px; 
+    color: #ffffff;
+} 
+.subtitle { 
+  text-align: center; 
+  margin-top: 20px; 
+  color: #ffffff; 
+  font-family: 'times new roman', serif; 
+  font-size: 25px; 
+}
+
+.subtitle2 {
+  transform: none;
+  display: block;
+  text-align: center; 
+  margin-top: 10px; 
+  margin-bottom: 24px;
+  color: #ffffff; 
+  font-family: 'times new roman', serif; 
+  font-size: 35px; 
+  justify-content: center;
+  padding: 25px;
+}
+
+.white-divider {
+    display: block;
+    margin: -50px auto 0 auto;
+    filter: invert(1) brightness(3);
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    transform: scaleY(.4) !important;
+    padding: 20px 0px;
+    padding-top: 125px;
+}
+
+.white-divider-inverse {
+    display: block;
+    margin: -50px auto 0 auto;
+    filter: invert(1) brightness(3);
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    transform: scaleY(.4) rotate(180deg) !important;
+    padding: 20px 0px;
+}
