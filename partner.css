@@ -373,7 +373,8 @@ body {
     font-size: 1.5rem;
     line-height: 1.6;
     padding: 0 40px;
-    max-width: 999px
+    max-width: 999px;
+    justify-content: center;
 }
 
 .faq .faq-toggle[aria-expanded="true"] + .answer .answer-content {
