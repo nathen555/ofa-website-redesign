@@ -175,29 +175,91 @@ body {
   font-family: 'times new roman', serif; 
   font-size: 25px; 
 }
+.subtitle2 { 
+  text-align: center; 
+  margin-top: 20px; 
+  color: #ffffff; 
+  font-family: 'times new roman', serif; 
+  font-size: 40px !important; 
+}
+
+.subtitle3 { 
+  text-align: center; 
+  margin-top: 20px; 
+  color: #ffffff; 
+  font-family: 'times new roman', serif; 
+  font-size: 40px !important; 
+}
+
+.subtitle4{ 
+  text-align: center; 
+  margin-top: 20px; 
+  color: #ffffff; 
+  font-family: 'times new roman', serif; 
+  font-size: 25px !important; 
+}
+
+.spotlight-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+  padding: 20px 0;
+}
+
+.spotlight-text {
+  max-width: 560px;
+}
+
+.spotlight-text .subtitle4 {
+  text-align: left;
+}
 
 .image-row {
   display: flex;
+  justify-content: flex-end;
   align-items: flex-start;
   gap: 30px;
-  margin-left: var(--image-left-space);
+  width: 100%;
+  margin-left: 0;
   margin-top: 30px;
   flex-wrap: wrap;
 }
 
-.image {
-  display: block;
-  width: min(750px, 100%);
-  margin: 0;
-  box-sizing: border-box;
+.image-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 0 0 45%;
+  min-width: 320px;
+  padding-left: 20px;
+  align-items: flex-end;
 }
 
-.image1 {
+.image1,
+.image2 {
   display: block;
-  width: 100%;
-  max-width: 700px;
-  margin: 0;
+  width: calc(100% - 20px);
+  max-width: calc(100% - 20px);
   height: auto;
+  object-fit: cover;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 31px;
+  background-clip: padding-box;
+}
+
+.image3 {
+  display: block;
+  width: calc(45% - 20px);
+  max-width: 520px;
+  margin-left: 0;
+  margin-top: 30px;
+  height: auto;
+  object-fit: cover;
   box-sizing: border-box;
   overflow: hidden;
   border-radius: 31px;
@@ -206,15 +268,13 @@ body {
 
 .caption {
   text-align: left;
-  margin-top: 0;
+  margin: 0;
   color: #ffffff;
   font-family: 'times new roman', serif;
   font-size: 30px;
   flex: 1;
   min-width: 240px;
-  max-width: 800px;
 }
-
 .content3 {
     text-align: center;
     margin-top: 5px;
@@ -232,6 +292,7 @@ body {
     width:80%;
     transform: scaleY(.4) !important;
     padding: 20px 0px;
+    padding-top: 125px;
 }
 
 .white-divider-inverse {
