@@ -15,6 +15,19 @@ body {
     animation: fadeUpIn 0.8s ease-out forwards;
 }
 
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    visibility: hidden;
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
 @keyframes fadeUpIn {
     from {
         opacity: 0;
@@ -32,7 +45,8 @@ body {
     z-index: 10;
     opacity: 0;
     transform: translateY(-20px);
-    animation: navbarDropIn 0.8s ease-out 0.15s forwards;
+    animation: navbarDropIn 1.4s ease-out 0.15s forwards;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
 }
 
 @keyframes navbarDropIn {
@@ -127,7 +141,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width:80%;
-    transform: scaleY(.2);
+    transform: scaleY(.4) !important;
     padding: 20px 0px;
 }
 
@@ -156,7 +170,7 @@ body {
   display: grid !important; 
   grid-template-columns: repeat(2, 1fr) !important; 
   gap: 40px !important; 
-  padding: 40px 100px !important; /* Reduced side padding so buttons fit screens better */
+  padding: 40px 100px !important; 
   width: 100% !important; 
   box-sizing: border-box !important; 
 } 
@@ -168,28 +182,28 @@ body {
 } 
 
 .grid-clickable-text { 
-  background-color: #172b44 !important; /* Matches your navigation block color */
-  border: 1px solid #23395b !important; /* Subtle inner border outline */
+  background-color: #172b44 !important; 
+  border: 1px solid #23395b !important;
   border-radius: 12px !important; 
   text-align: center !important; 
   box-sizing: border-box !important; 
-  padding: 30px 20px !important; /* Reduced height padding so they look like sleek banners */
+  padding: 30px 20px !important;
   transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.2s ease !important; 
 } 
 
-/* Targets the actual text elements inside the grid boxes */
+
 .grid-clickable-text p {
-  color: #ffffff !important; /* Bright white text to stand out against navy */
+  color: #ffffff !important;
   font-family: Arial, sans-serif !important;
-  font-size: 24px !important; /* Balanced typography scale */
+  font-size: 24px !important;
   font-weight: 500 !important;
   margin: 0 !important;
   padding: 0 !important;
 }
 
 .grid-link-wrapper:hover .grid-clickable-text { 
-  background-color: #1d3554 !important; /* Elevates brightness on hover state */
-  transform: translateY(-4px) scale(1.01) !important; /* Smooth upwards glide animation */
+  background-color: #1d3554 !important;
+  transform: translateY(-4px) scale(1.01) !important; 
   box-shadow: 0 10px 20px rgba(0,0,0,0.3) !important;
 } 
 

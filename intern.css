@@ -15,6 +15,19 @@ body {
   padding-top: 100px;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  visibility: hidden;
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
 @keyframes fadeUpIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -227,7 +240,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width:80%;
-    transform: scaleY(.2);
+    transform: scaleY(.4) !important;
     padding: 20px 0px;
 }
 

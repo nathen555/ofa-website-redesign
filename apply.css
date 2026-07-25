@@ -159,19 +159,3 @@ body {
   height: min(250px, 24vw) !important;
   margin: 0 !important;
 }
-
-.title { 
-  text-align: center; 
-  margin-top: 50px; 
-  font-family: 'times new roman', serif; 
-  font-size: 78px; 
-    color: #ffffff;
-}
-
-.subtitle { 
-  text-align: center; 
-  margin-top: 20px; 
-  color: #ffffff; 
-  font-family: 'times new roman', serif; 
-  font-size: 25px; 
-}
