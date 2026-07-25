@@ -41,7 +41,75 @@
     </div>
     <img src="./images/white-divider1.PNG" alt="uhh very cool divider" class="white-divider reveal">
     <div class="title reveal">FREQUENTLY ASKED QUESTIONS</div>
-    <div class="subtitle5 reveal">yooooooooooo</div>
+
+
+<div class="faq reveal">
+    <button class="faq-toggle" type="button" aria-expanded="false">
+        <span class="arrow">▶</span>
+        <span class="question">
+            What is the minimum time commitment to host a youth?
+        </span>
+    </button>
+
+    <div class="answer">
+        <div class="answer-content">
+            We expect companies to host a minimum of 90 hours per youth.
+        </div>
+    </div>
+</div>
+
+<div class="faq reveal">
+    <button class="faq-toggle" type="button" aria-expanded="false">
+        <span class="arrow">▶</span>
+        <span class="question">
+            How many hours per day/week will be required?
+        </span>
+    </button>
+
+    <div class="answer">
+        <div class="answer-content">
+            It’s our goal that each youth works a minimum of 90 hours over the course of the summer.
+        </div>
+    </div>
+</div>
+<div class="faq reveal">
+    <button class="faq-toggle" type="button" aria-expanded="false">
+        <span class="arrow">▶</span>
+        <span class="question">When does the Opportunities for All initiative application open for 2024?</span>
+    </button>
+
+    <div class="answer">
+        <div class="answer-content">
+            Recruiting and registration for summer 2026 will open in early 2026. Applications will be available online.
+        </div>
+    </div>
+</div>
+<div class="faq reveal">
+    <button class="faq-toggle" type="button" aria-expanded="false">
+        <span class="arrow">▶</span>
+        <span class="question">How can youth sign up for jobs?
+</span>
+    </button>
+
+    <div class="answer">
+        <div class="answer-content">
+            Youth may apply for OFA at https://www.opps4allsf.org/faq-apply-for-internship
+        </div>
+    </div>
+</div>
+<div class="faq reveal">
+    <button class="faq-toggle" type="button" aria-expanded="false">
+        <span class="arrow">▶</span>
+        <span class="question">Who should I follow up with?</span>
+    </button>
+
+    <div class="answer">
+        <div class="answer-content">
+            Partners@opps4allsf.org
+        </div>
+    </div>
+</div>
+</div>
     <div class="content3 reveal"> OPPS4ALLSF.ORG</div>
     <div class="bottom-navbar">
       <div class="footer-section">
@@ -60,6 +128,15 @@
         <img src="./images/sf-seal.PNG" class="nav-image" alt="Icon 3">
       </div>
     </div>
+    <script>
+      document.querySelectorAll('.faq-toggle').forEach(function(button) {
+        button.addEventListener('click', function() {
+          var isExpanded = this.getAttribute('aria-expanded') === 'true';
+          this.setAttribute('aria-expanded', String(!isExpanded));
+          this.classList.toggle('is-open', !isExpanded);
+        });
+      });
+    </script>
     <script src="./scroll-reveal.js"></script>
 </body>
 </html>
