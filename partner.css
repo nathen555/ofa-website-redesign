@@ -1,3 +1,7 @@
+:root {
+  --image-left-space: 50px;
+}
+
 body { 
   margin: 0; 
   font-family: Arial, sans-serif; 
@@ -84,11 +88,7 @@ body {
 }
 
 .bottom-navbar { 
-  position: fixed !important; 
-  bottom: 0 !important;
-  top: auto !important;
-  left: 0;
-  right: 0;
+  position: relative; 
   width: 100%;
   max-width: 100%;
   background-color: #ffffff; 
@@ -99,7 +99,7 @@ body {
   justify-content: space-between; 
   gap: 20px;
   box-sizing: border-box; 
-  z-index: 900;
+  z-index: 1;
 }
 
 .footer-section { 
@@ -166,4 +166,81 @@ body {
   font-family: 'times new roman', serif; 
   font-size: 78px; 
     color: #ffffff;
+}
+
+.subtitle { 
+  text-align: center; 
+  margin-top: 20px; 
+  color: #ffffff; 
+  font-family: 'times new roman', serif; 
+  font-size: 25px; 
+}
+
+.image-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-left: var(--image-left-space);
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.image {
+  display: block;
+  width: min(750px, 100%);
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.image1 {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  margin: 0;
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 31px;
+  background-clip: padding-box;
+}
+
+.caption {
+  text-align: left;
+  margin-top: 0;
+  color: #ffffff;
+  font-family: 'times new roman', serif;
+  font-size: 30px;
+  flex: 1;
+  min-width: 240px;
+  max-width: 800px;
+}
+
+.content3 {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 50px;
+    color: #ffffff;
+    font-family: 'times new roman', serif;
+}
+
+.white-divider {
+    display: block;
+    margin: -50px auto 0 auto;
+    filter: invert(1) brightness(3);
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    transform: scaleY(.4) !important;
+    padding: 20px 0px;
+}
+
+.white-divider-inverse {
+    display: block;
+    margin: -50px auto 0 auto;
+    filter: invert(1) brightness(3);
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    transform: scaleY(.4) rotate(180deg) !important;
+    padding: 20px 0px;
 }
