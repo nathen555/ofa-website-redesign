@@ -12,7 +12,6 @@ body {
 .page-animate {
   opacity: 0;
   animation: fadeUpIn 0.8s ease-out forwards;
-  padding-top: 100px;
 }
 
 .reveal {
@@ -36,7 +35,7 @@ body {
 .navbar { 
   background-color: #172b44; 
   padding: 20px 40px; 
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
