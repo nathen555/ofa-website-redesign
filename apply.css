@@ -84,7 +84,7 @@ body {
 }
 
 .bottom-navbar { 
-  position: fixed !important; 
+  position: relative !important; 
   bottom: 0 !important;
   top: auto !important;
   left: 0 !important;
@@ -171,8 +171,9 @@ body {
 .title2 { 
   text-align: center; 
   margin-top: -30px; 
+  margin-bottom: 20px;
   font-family: 'times new roman', serif; 
-  font-size: 78px; 
+  font-size: 60px; 
     color: #ffffff;
 } 
 .subtitle { 
@@ -217,4 +218,74 @@ body {
     width:80%;
     transform: scaleY(.4) rotate(180deg) !important;
     padding: 20px 0px;
+}
+
+.faq{
+    width:80%;
+    max-width:1500px;
+    margin:20px auto;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color:white;
+
+}
+
+.faq-toggle{
+    width: 100%;
+    background: none;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 12px 0;
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+    gap: 16px;
+}
+
+.arrow {
+    display: inline-block;
+    font-size: 1.3rem;
+    transition: transform .35s ease;
+}
+
+.faq-toggle[aria-expanded="true"] .arrow,
+.faq-toggle.is-open .arrow {
+    transform: rotate(90deg);
+}
+
+.faq-toggle .question{
+    transition: transform .3s ease;
+}
+
+.faq-toggle:hover .question{
+    transform:translateX(0);
+}
+
+.faq .answer {
+    overflow: hidden;
+}
+
+.faq .answer-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: max-height .4s ease, opacity .3s ease, transform .35s ease;
+    text-align: center !important;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    padding: 0 40px;
+    max-width: 999px;
+    margin: 0 auto;
+}
+
+.faq .faq-toggle[aria-expanded="true"] + .answer .answer-content {
+    max-height: 220px;
+    opacity: 1;
+    transform: translateY(0);
+    padding-top: 10px;
 }
