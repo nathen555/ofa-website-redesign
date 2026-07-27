@@ -373,3 +373,35 @@ input[name="slider"] {
   height: min(250px, 24vw) !important;
   margin: 0 !important;
 }
+
+.table {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  padding: 16px;
+  width: fit-content;
+  border: 1px solid rgba(255,255,255,0.32);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.table table {
+  border-collapse: collapse;
+  color: #ffffff;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ffffff;
+  padding: 14px 20px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.table th {
+  background: rgba(255,255,255,0.08);
+}
+
+tr:first-child th {
+  border: 1px solid #ffffff;
+}
