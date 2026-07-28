@@ -175,6 +175,16 @@ body {
   font-family: 'times new roman', serif; 
   font-size: 20px !important; 
     color: #ffffff;
+
+}
+.title3 { 
+  text-align: center; 
+  margin-top: 0px; 
+  padding-top: -20px;
+  margin-bottom: 20px;
+  font-family: 'times new roman', serif; 
+  font-size: 60px !important; 
+    color: #ffffff;
 } 
 .subtitle { 
   text-align: center; 
