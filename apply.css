@@ -36,8 +36,8 @@ body {
 .navbar { 
   background-color: #172b44; 
   padding: 20px 40px; 
-  overflow: hidden;
   position: sticky;
+  display: flex;
   top: 0;
   left: 0;
   right: 0;
@@ -46,7 +46,40 @@ body {
   transform: translateY(-20px);
   animation: navbarDropIn 0.8s ease-out 0.15s forwards;
 } 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-right: 40px;
+    text-decoration: none;
+}
 
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.logo-text {
+    color: white;
+    text-decoration: none;
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+}
+
+.logo-text span {
+    text-decoration: none;
+}
+@keyframes navbarDropIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @keyframes navbarDropIn {
   from {
     opacity: 0;
@@ -59,13 +92,16 @@ body {
 }
 .nav-links { 
   display: flex; 
-  justify-content: center; 
+  justify-content: right !important; 
   align-items: center; 
   list-style-type: none; 
   flex-wrap: nowrap; 
   margin: 0; 
+  margin-top: 1px;
   padding: 0; 
+  margin-left: auto;
   gap: 60px; 
+  font-family: "Inter", sans-serif;
   font-weight: 500; 
   font-size: 22px; 
 } 

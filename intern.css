@@ -36,6 +36,7 @@ body {
   background-color: #172b44; 
   padding: 20px 40px; 
   position: sticky;
+  display: flex;
   top: 0;
   left: 0;
   right: 0;
@@ -57,14 +58,17 @@ body {
 }
 .nav-links { 
   display: flex; 
-  justify-content: center; 
+  justify-content: right !important; 
   align-items: center; 
   list-style-type: none; 
   flex-wrap: nowrap; 
   margin: 0; 
+  margin-top: 3px;
   padding: 0; 
   gap: 60px; 
+  font-family: "Inter", sans-serif;
   font-weight: 500; 
+  margin-left:auto;
   font-size: 22px; 
 } 
 .nav-links a { 
@@ -81,6 +85,27 @@ body {
   background-color: #555; 
   border-radius: 4px; 
 } 
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.logo-text {
+    color: white;
+    text-decoration: none;
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+}
 .title { 
   text-align: center; 
   margin-top: 50px; 
