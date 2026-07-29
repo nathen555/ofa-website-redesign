@@ -2,16 +2,20 @@
   --image-left-space: 50px;
 }
 
-body { 
-  margin: 0; 
-  font-family: Arial, sans-serif; 
-  background-color: #0a2042; 
-  background-image: url('./images/sf-seal.PNG'); 
-  background-size: 45%; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-attachment: fixed; 
-} 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0a2042;
+}
+
+body::before {
+  content:"";
+  position:fixed;
+  inset:0;
+  background: url("./images/white-seal.PNG") center/45% no-repeat;
+  opacity: 0.15;
+  z-index: -1;
+}
 
 .page-animate {
   opacity: 0;
