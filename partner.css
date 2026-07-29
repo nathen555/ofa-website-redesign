@@ -308,6 +308,23 @@ body {
   flex: 1;
   min-width: 240px;
 }
+.centered-paragraph {
+  max-width: 900px;
+  margin: 30px auto 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: 'times new roman', serif;
+  line-height: 1.5;
+}
+.divider-line {
+  width: 120px;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 30px auto 0 auto;
+  border-radius: 2px;
+}
 .content3 {
     text-align: center;
     margin-top: 5px;
