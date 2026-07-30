@@ -1,0 +1,39 @@
+Date : 2026-07-28 23:56:19
+Directory : c:\Users\nathe\OneDrive\Documents\GitHub\ofa-website-redesign
+Total : 13 files,  2930 codes, 1 comments, 364 blanks, all 3295 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| PostCSS    |          6 |      2,154 |          0 |        264 |      2,418 |
+| HTML       |          6 |        745 |          1 |         95 |        841 |
+| JavaScript |          1 |         31 |          0 |          5 |         36 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                           | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                              |         13 |      2,930 |          1 |        364 |      3,295 |
++--------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                       | language   | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\nathe\OneDrive\Documents\GitHub\ofa-website-redesign\apply.css        | PostCSS    |        314 |          0 |         33 |        347 |
+| c:\Users\nathe\OneDrive\Documents\GitHub\ofa-website-redesign\apply.html       | HTML       |        114 |          0 |         12 |        126 |
+| c:\Users\nathe\OneDrive\Documents\GitHub\ofa-website-redesign\contact.css      | PostCSS    |        428 |          0 |         57 |        485 |
+| c:\Users\nathe\OneDrive\Documents\GitHub\ofa-website-redesign\contact.html     | HTML       |        104 |          0 |         20 |        124 |
+| c:\Users\nathe\OneDrive\Documents\GitHub\ofa-website-redesign\frequently.css   | PostCSS    |        314 |          0 |         33 |        347 |
+| c:\Users\nathe\OneDrive\Documents\GitHub\ofa-website-redesign\frequently.html  | HTML       |        144 |          1 |         18 |        163 |
+| c:\Users\nathe\OneDrive\Documents\GitHub\ofa-website-redesign\homepage.css     | PostCSS    |        374 |          0 |         56 |        430 |
+| c:\Users\nathe\OneDrive\Documents\GitHub\ofa-website-redesign\index.html       | HTML       |        142 |          0 |         18 |        160 |
+| c:\Users\nathe\OneDrive\Documents\GitHub\ofa-website-redesign\intern.css       | PostCSS    |        351 |          0 |         40 |        391 |
+| c:\Users\nathe\OneDrive\Documents\GitHub\ofa-website-redesign\intern.html      | HTML       |        100 |          0 |         18 |        118 |
+| c:\Users\nathe\OneDrive\Documents\GitHub\ofa-website-redesign\partner.css      | PostCSS    |        373 |          0 |         45 |        418 |
+| c:\Users\nathe\OneDrive\Documents\GitHub\ofa-website-redesign\partner.html     | HTML       |        141 |          0 |          9 |        150 |
+| c:\Users\nathe\OneDrive\Documents\GitHub\ofa-website-redesign\scroll-reveal.js | JavaScript |         31 |          0 |          5 |         36 |
+| Total                                                                          |            |      2,930 |          1 |        364 |      3,295 |
++--------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
