@@ -151,7 +151,7 @@ body::before {
   flex-wrap: wrap;         
   
   margin-top: 20px; 
-  font-size: 20px; 
+  font-size: 25px; 
   font-family: 'times new roman', serif; 
   list-style-type: disc; 
   padding: 20px;              
@@ -339,7 +339,7 @@ input[name="slider"] {
   flex-wrap: wrap;
   align-items: center; 
   justify-content: space-between; 
-  gap: 20px;
+  gap: 24px;
   box-sizing: border-box; 
 }
 
@@ -390,14 +390,15 @@ input[name="slider"] {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 28px;
   margin: 0 auto;
+  flex: 1 1 280px;
 }
 
 .center-gallery .nav-image {
   display: inline-block !important;
-  width: min(250px, 24vw) !important;
-  height: min(250px, 24vw) !important;
+  width: min(180px, 18vw) !important;
+  height: min(180px, 18vw) !important;
   margin: 0 !important;
 }
 

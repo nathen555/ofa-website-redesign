@@ -140,7 +140,7 @@ body::before {
   flex-wrap: wrap !important;
   align-items: center !important; 
   justify-content: space-between !important; 
-  gap: 20px !important;
+  gap: 24px !important;
   box-sizing: border-box !important; 
   z-index: 9999 !important;
   transform: none !important;
@@ -193,14 +193,15 @@ body::before {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 28px;
   margin: 0 auto;
+  flex: 1 1 280px;
 }
 
 .center-gallery .nav-image {
   display: inline-block !important;
-  width: min(250px, 24vw) !important;
-  height: min(250px, 24vw) !important;
+  width: min(180px, 18vw) !important;
+  height: min(180px, 18vw) !important;
   margin: 0 !important;
 }
 

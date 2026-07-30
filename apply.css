@@ -138,7 +138,7 @@ body::before {
   flex-wrap: wrap !important;
   align-items: center !important; 
   justify-content: space-between !important; 
-  gap: 20px !important;
+  gap: 24px !important;
   box-sizing: border-box !important; 
   z-index: 9999 !important;
   transform: none !important;
@@ -191,14 +191,15 @@ body::before {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 28px;
   margin: 0 auto;
+  flex: 1 1 280px;
 }
 
 .center-gallery .nav-image {
   display: inline-block !important;
-  width: min(250px, 24vw) !important;
-  height: min(250px, 24vw) !important;
+  width: min(180px, 18vw) !important;
+  height: min(180px, 18vw) !important;
   margin: 0 !important;
 }
 
@@ -285,10 +286,12 @@ body::before {
     padding: 18px 24px;
     display: flex;
     align-items: center !important;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 16px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    text-align: left;
+    line-height: 1.4;
 }
 
 .arrow {
@@ -304,6 +307,8 @@ body::before {
 
 .faq-toggle .question{
     transition: transform .3s ease;
+    text-align: left;
+    flex: 1;
 }
 
 .faq-toggle:hover .question{
@@ -311,6 +316,8 @@ body::before {
 }
 
 .faq .answer {
+    width: 90%;
+    margin: 0 auto;
     overflow: hidden;
 }
 
@@ -320,12 +327,14 @@ body::before {
     opacity: 0;
     transform: translateY(-8px);
     transition: max-height .4s ease, opacity .3s ease, transform .35s ease;
-    text-align: center !important;
+    text-align: left;
     font-size: 1.5rem;
     line-height: 1.6;
     padding: 20px 30px;
-    max-width: 999px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    box-sizing: border-box;
     border: 2px solid rgba(0, 0, 0, 0.12);
     border-top: none;
     border-radius: 0 0 12px 12px;
